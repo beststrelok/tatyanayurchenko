@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.png" />
-  <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="libs/linea/styles.css" />
   <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
@@ -38,10 +38,10 @@
     	  </button>
     	  <nav class="top_mnu">
     	  	<ul>
-    	  		<li><a href="">Обо Мне</a></li>
-    	  		<li><a href="">Резюме</a></li>
-    	  		<li><a href="">Портфолио</a></li>
-    	  		<li><a href="">Контакты</a></li>
+    	  		<li><a href="#about2">Обо Мне</a></li>
+    	  		<li><a href="#resume">Резюме</a></li>
+    	  		<li><a href="#portfolio">Портфолио</a></li>
+    	  		<li><a href="#about">Контакты</a></li>
     	  	</ul>
     	  </nav>
     	</div>
@@ -59,18 +59,18 @@
     </div>
 
   </header>
-  <section id="about" class="s_about">
+  <section id="about2" class="s_about about_222">
     <div class="section_header">
       <h2 class="h_header">Обо мне</h2>
         <div class="s_descr_wrap">
            <div class="s_descr">познакомимся ближе</div>
         </div>
     </div>
-    <div class="section_content ">
+    <div class="section_content">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-push-4 ">
-            <h3>Фото</h3>
+            <h3></h3>
             <div class="person">
               <a href="img/tanua.jpg" class="popup"><img src="img/tanua.jpg" alt="Татьяна Юрченко" class="img_tanya"></a>
             </div>
@@ -107,7 +107,7 @@
     </div>
   </section>
   <div class="background_resume_img">
-  <div class="background_resume">
+  </div>
   <section id="resume" class="s_resume">
    <div class="section_header">
       <h2 class="h_header">Резюме</h2>
@@ -132,7 +132,7 @@
           <p>С 2011 года работала в частном массажном кабинете. Эта работа дала мне опыт в общении и лечении абсолютно разных людей. Которые приходят к массажистам необезательно по направлернию врача. Они сами решают для себя пройти курс массажа. Соответсвенно это работа дала опыт в том что для таких людей массажист толжен быть не только ремесленником, но и врачем чтоб помоч клиенту поднять здоровье и не навредить ему.</p>
         </div>
         <div class="resume_item">
-          <div class="year">2011-........</div>
+          <div class="year">2011-</div>
           <div class="resume_descroption"><span>Ч.П. Татьяна Юрченко</span> <strong>Работаю на себя</strong></div>
           <p>См 2011 года работаю на себя. Занимаюсь частной практикой и орегулярно получаю благодарные отзывыот клиентов. Експерементировать на чужом здоровье непозволительно, поэтому как бы не хотелось сделать этого раньше смогда позволить себе работать на себя и не спрашивать советов колдег лишь спустя 6 лет обучения и 16 лет практики под чьимто руководством.
           Сейчас положа руку на серце и со всей ответственностью могу называть себя опытной, знающей и авторитетной внешностью в узких кругах массажистов.</p>
@@ -170,8 +170,6 @@
       </div>
     </div>
   </section>
-  </div>
-  </div>
   <section id="portfolio" class="s_portfolio">
    <div class="section_header">
       <h2 class="h_header">Портфолио</h2>
@@ -186,9 +184,9 @@
             <div class="filter_div controls">
               <ul>
                 <li class="active active" data-filter="all"></li>
-                <li class="filter" data-filter=".category_1">Оздоровительный массаж //</li>
-                <li class="filter" data-filter=".category_2">Антицелюлитный массаж //</li>
-                <li class="filter" data-filter=".category_3">Косметический массаж<li>
+                <button type="button" class="btn btn-warning filter" data-filter=".category_1">Оздоровительный массаж</button>
+                <button type="button" class="btn btn-warning filter" data-filter=".category_2">Антицелюлитный массаж</button>
+                <button type="button" class="btn btn-warning filter" data-filter=".category_3">Косметический масса</button>
               </ul>
         <div id="portfolio_grid">
            <!-- ОБЩИЙ МАССАЖ - КАРТИНКИ ПЕРЕЧЕНЬ -->
@@ -489,17 +487,19 @@
                <form action="">
                  <label class="form-group">
                   <span class="color_element">*</span> Ваше имя:
-                  <input type="text" name="name" placeholder="Ваше имя" requared>
+                  <input type="text" name="name" placeholder="Ваше имя:" requared>
                  </label>
                  <label class="form-group">
                   <span class="color_element">*</span> Ваш e-mail:
-                  <input type="text" name="name" placeholder="Ваш e-mail: " requared>
+                  <input type="text" name="name" placeholder="Ваш e-mail:" requared>
                  </label>
                   <label class="form-group">
-                  <span class="color_element">*</span> Ваше сообщение
+                  <span class="color_element">*</span> Ваше сообщение:
                   <textarea name="message" placeholder="Ваш сообщение:" requared></textarea>  
                  </label> 
-                 <button>Отправить</button>
+                  <p>
+                    <button>Отправить</button>
+                  </p>
                </form>
             </div>
           </div>
@@ -511,7 +511,7 @@
   <div class="container">
    <div class="row">
      <div class="col-md-6">
-        <i class="fa fa-copyright"> 2015 Татьяна Юрченко. Авторские права защищены.</i>
+        <i class="fa fa-copyright"><span> 2015 Татьяна Юрченко. Авторские права защищены.</span></i>
      </div>
      <div class="social_wrap col-md-6">
                <ul class="social_networks">
@@ -549,3 +549,7 @@
   <!-- Google Analytics counter --><!-- /Google Analytics counter -->
   </body>
   </html>
+
+  <!-- http://themeforest.net/item/bionick-personal-portfolio-wordpress-theme/12103153 -->
+  <!-- http://themeforest.net/item/profession-cv-resume-html-template/full_screen_preview/5610523 -->
+  <!-- http://themeforest.net/item/promotion-animated-cv-resume-theme/full_screen_preview/7709847  socilas -->

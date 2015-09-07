@@ -63,8 +63,8 @@ section, header {
   float: left;
 }
 .toggle_mnu {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   float: right;
   position: fixed;
   right: 30px;
@@ -74,25 +74,24 @@ section, header {
   border-radius: 6px;
   opacity: 0.7;
   border: none;
+  outline: none;
 }
 .toggle_mnu.active {
   opacity: 1;
   border-radius: 6px;
 }
 .sandwich {
-  width: 34px;
-  height: 34px;
+  width: 50%;
+  height: 50%;
   position: absolute;
-  top: 18px;
+  top: 10px;
   bottom: 0;
   left: 10px;
   right: 0;
 }
 .sw-topper {
   position: relative;
-  top: 0;
-  width:40px;
-  height: 4px;
+  height: 3px;
   background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
@@ -102,9 +101,7 @@ section, header {
 }
 .sw-bottom {
   position: relative;
- width: 40px;
-  height: 4px;
-  top: 7px;
+  height: 3px;
   background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
@@ -114,9 +111,7 @@ section, header {
 }
 .sw-footer {
   position: relative;
-  width: 40px;
-  height: 4px;
-  top: 14px;
+  height: 3px;
   background: #fff;
   border: none;
   border-radius: 4px 4px 4px 4px;
@@ -129,7 +124,7 @@ section, header {
   transform: rotate(140deg);
 }
 .sandwich.active .sw-bottom {
-  top: 6px;
+  top: 7px;
   transform: rotate(-140deg);
 }
 .sandwich.active .sw-footer {
@@ -204,6 +199,10 @@ section, header {
  text-align: center;
  vertical-align: middle;
 }
+section{
+    padding: 70px 0 40px; 
+    box-shadow: none;
+  }
 .top_text {
   display: inline-block;
 }
@@ -230,32 +229,32 @@ section, header {
   border:2px solid #fff;
   font-size: 18px;
 }
-section{
-  padding: 70px 0 40px; 
-  box-shadow: none;
-}
+
 #about {
-  background-color: #fafafa;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,.5);
 }
 #resume  {
-box-shadow: none;
-opacity: 1;
+  box-shadow: none;
+  opacity: 1;
 }
 .background_resume_img {
-background-image: url(../img/telka2.jpg);
-background-repeat: no-repeat;
-background-position: 50% 50%;
+  background-image: url(../img/telka2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 1080px;
+  margin-bottom: -1080px;
+}
 
-}
-.background_resume{
-}
 section .s_resume {
 }
 #contacts {
   background-color: #eee
 }
 .s_portfolio {
-  background-color: #888;
+  background-image: url(../img/noise.png);
+  box-shadow: 0px -5px 10px 0px rgba(0,0,0,.5);
 }
 /*настройки для заголовка ОБО МНЕ*/
  .s_about .h_header{
@@ -276,7 +275,7 @@ section .s_resume {
   font-size: 12px;
   letter-spacing: 1px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   color: #000;
   font-weight: 400;
 }
@@ -308,11 +307,11 @@ section #about .s_descr:after {
   font-size: 12px;
   letter-spacing: 1px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   color: #fff;
   font-weight: 400;
 }
-.s_descr:after {
+/*.s_descr:after {
   content: "";
    background-color:#fff;
    width: 150px;
@@ -321,7 +320,7 @@ section #about .s_descr:after {
    left: 50%;
    margin-left: -75px;
    margin-top: 60px;
- }
+ }*/
  /*настройки для заголовка ПОРТФОЛИО*/
 .s_portfolio .h_header {
   text-align: center;
@@ -340,11 +339,11 @@ section #about .s_descr:after {
   font-size: 12px;
   letter-spacing: 1px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
   color: #fff;
   font-weight: 400;
 }
-.s_descr:after {
+/*.s_descr:after {
   content: "";
    background-color:#fff;
    width: 150px;
@@ -353,7 +352,7 @@ section #about .s_descr:after {
    left: 50%;
    margin-left: -75px;
    margin-top: 60px;
- }
+ }*/
 
  .work {
   color: #fff;
@@ -416,9 +415,10 @@ section h3 {
   color: #FF6347;
 }
 .img_tanya {
-  border-radius: 20px;
-  border:1px #eee solid;
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    border: 1px #eee solid;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    margin-top: 17px;
 }
 .personal_header {
   font-size: 19px;
@@ -642,14 +642,13 @@ margin-bottom: 0;
   letter-spacing: 1px; 
   font-weight: 600;
   margin-top: 10px;
-  float: right;
 }
 .form-group {
   display: block;
    letter-spacing: 2px;
   color: #888;
-  margin-bottom: 20px; 
-  margin-top: 20px;
+  margin-bottom: 35px; 
+  margin-top: 0px;
 
 }
 .form-group input{
@@ -675,10 +674,43 @@ margin-bottom: 0;
 }
 
 
+.fa-copyright {
+  color: white;
+  margin-top: 5px;
+}
+.fa-copyright span {
+    font-family: Arial;
+    font-size: 13px;
+}
+.social_networks .fa {
+  color: #82C5FF;
+}
 
+.sandwich span {
+  margin-bottom: 5px;
+}
+.sandwich.active span {
+  margin-bottom: 0px;
+}
+.main_form p {
+  text-align: center;
+}
+.about_222 {
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,.5);
+  z-index: 10;
+}
 
-
-
+.btn-warning {
+  background-color: #FF6347;
+  border: none;
+}
+.btn-warning:active, .btn-warning:hover, .btn-warning:visited, .btn-warning:focus, .btn-warning.active,
+.btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, .open>.dropdown-toggle.btn-warning.focus, .open>.dropdown-toggle.btn-warning:focus, .open>.dropdown-toggle.btn-warning:hover {
+  background-color: #D8543C;
+  border-color: #D8543C;
+  text-decoration: underline;
+  outline: none;
+}
 
 
 
